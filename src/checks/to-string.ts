@@ -8,9 +8,10 @@ export function checkToString(window: Window): boolean {
   }
   const r: any = /./;
   let open = false;
-  r.toString = function () {
+  r.toString = () => {
       open = true;
   };
+  // tslint:disable-next-line:no-console
   console.log('%c', r);
-  return open
+  return open;
 }
