@@ -1,5 +1,7 @@
 # devtools-detect
 
+[![CircleCI](https://circleci.com/gh/bretkikehara/devtools-detect.svg?style=svg)](https://circleci.com/gh/bretkikehara/devtools-detect)
+
 > Utility to check if DevTools.
 
 - Chrome DevTools
