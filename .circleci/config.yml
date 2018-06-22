@@ -35,3 +35,17 @@ jobs:
 
       # run tests!
       - run: yarn lint && yarn test
+
+workflows:
+   version: 2
+   monthly:
+     triggers:
+       - schedule:
+           cron: "0 0 1 * *"
+           filters:
+             branches:
+               only:
+                 - master
+                 - beta
+     jobs:
+       - build
