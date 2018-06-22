@@ -9,7 +9,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:8-jessie-browsers
 
-    working_directory: ~/repo
+    working_directory: ~/devtools-detect
 
     steps:
       - checkout
