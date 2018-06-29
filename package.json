@@ -1,6 +1,6 @@
 {
   "name": "@bretkikehara/devtools-detect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility to check if DevTools.",
   "license": "MIT",
   "repository": "bretkikehara/devtools-detect",
@@ -12,6 +12,7 @@
   "engines": {
     "node": ">=8.0.0"
   },
+  "main": "dist/detect.js",
   "scripts": {
     "clean": "rm -rf coverage/ dist/",
     "build": "tsc -p tsconfig.json",
@@ -19,7 +20,7 @@
     "test": "karma start"
   },
   "files": [
-    "src/index.js"
+    "src/detect.ts"
   ],
   "keywords": [
     "browser",
