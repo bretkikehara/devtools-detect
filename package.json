@@ -13,8 +13,9 @@
     "node": ">=8.0.0"
   },
   "scripts": {
+    "clean": "rm -rf coverage/ dist/",
     "build": "tsc -p tsconfig.json",
-    "lint": "tslint -c tslint.json 'src/**/*.ts' -t verbose",
+    "lint": "tslint -c tslint.json -t verbose",
     "test": "karma start"
   },
   "files": [
